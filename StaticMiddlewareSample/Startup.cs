@@ -52,6 +52,7 @@ namespace StaticMiddlewareSample
             app.UseStaticFiles();
             app.UseStaticFiles(new StaticFileOptions
             {
+                RequestPath = "/RootFile",
                 FileProvider = new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(), "File"))
             });
 
