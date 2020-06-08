@@ -36,7 +36,7 @@ namespace StaticMiddlewareSample
 
             app.UseHttpsRedirection();
 
-            app.UseDirectoryBrowser();
+            app.UseDirectoryBrowser("/Test");
             app.UseStaticFiles();
 
             app.UseRouting();
